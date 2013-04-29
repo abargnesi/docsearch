@@ -1,0 +1,5 @@
+Whoosh==2.4.1
+beautifulsoup4==4.1.3
+distribute==0.6.34
+epub==0.5.1
+pyzmq==13.0.2
