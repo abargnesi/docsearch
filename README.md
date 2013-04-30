@@ -1,7 +1,7 @@
 docsearch
 =========
 
-Command-line index and search over technical documents.
+Command-line index and search over documents.
 
 requirements
 ------------
