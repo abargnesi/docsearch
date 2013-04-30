@@ -20,10 +20,10 @@ def main(file_pattern):
         mkdir(INDEX_DIR)
     except OSError:
         pass
-    schema = Schema(file_name=ID(stored=True), file_path=ID(stored=True),
+    schema = Schema(file_name=TEXT(stored=True), file_path=ID(stored=True),
                     title=TEXT(stored=True), description=TEXT(stored=True),
-                    subject=ID(stored=True), author=ID(stored=True),
-                    publisher=ID(stored=True), date=ID(stored=True),
+                    subject=TEXT(stored=True), author=TEXT(stored=True),
+                    publisher=TEXT(stored=True), date=TEXT(stored=True),
                     content=TEXT)
     ix = create_in(INDEX_DIR, schema)
     writer = ix.writer()
